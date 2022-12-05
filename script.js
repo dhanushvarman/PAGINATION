@@ -6,15 +6,17 @@ var table=document.createElement("table");
 table.setAttribute("id","table");
 
 async function data(){
-    var res=await fetch("https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json");
+    var res=await fetch("https://638adcb87220b45d2283a9d5.mockapi.io/dontchangeit");
     var res1=await res.json();
 
+    console.log(res1)
     var div=document.createElement("div");
     div.setAttribute("id","buttons");
 
     var button1=document.createElement("button");
     button1.setAttribute("type","button");
-    button1.setAttribute("class","button");
+    button1.style.marginRight="5px";
+    button1.setAttribute("class","btn btn-primary");
     button1.innerHTML="1";
 
     button1.onclick=()=>{
@@ -23,7 +25,8 @@ async function data(){
 
     var button2=document.createElement("button");
     button2.setAttribute("type","button");
-    button2.setAttribute("class","button");
+    button2.style.marginRight="5px";
+    button2.setAttribute("class","btn btn-primary");
     button2.innerHTML="2";
 
     button2.onclick=()=>{
@@ -32,7 +35,8 @@ async function data(){
 
     var button3=document.createElement("button");
     button3.setAttribute("type","button");
-    button3.setAttribute("class","button");
+    button3.style.marginRight="5px";
+    button3.setAttribute("class","btn btn-primary");
     button3.innerHTML="3";
 
     button3.onclick=()=>{
@@ -41,7 +45,8 @@ async function data(){
 
     var button4=document.createElement("button");
     button4.setAttribute("type","button");
-    button4.setAttribute("class","button");
+    button4.style.marginRight="5px";
+    button4.setAttribute("class","btn btn-primary");
     button4.innerHTML="4";
 
     button4.onclick=()=>{
@@ -50,7 +55,8 @@ async function data(){
 
     var button5=document.createElement("button");
     button5.setAttribute("type","button");
-    button5.setAttribute("class","button");
+    button5.style.marginRight="5px";
+    button5.setAttribute("class","btn btn-primary");
     button5.innerHTML="5";
 
     button5.onclick=()=>{
@@ -59,7 +65,8 @@ async function data(){
 
     var button6=document.createElement("button");
     button6.setAttribute("type","button");
-    button6.setAttribute("class","button");
+    button6.style.marginRight="5px";
+    button6.setAttribute("class","btn btn-primary");
     button6.innerHTML="6";
 
     button6.onclick=()=>{
@@ -68,7 +75,8 @@ async function data(){
 
     var button7=document.createElement("button");
     button7.setAttribute("type","button");
-    button7.setAttribute("class","button");
+    button7.style.marginRight="5px";
+    button7.setAttribute("class","btn btn-primary");
     button7.innerHTML="7";
 
     button7.onclick=()=>{
@@ -77,7 +85,8 @@ async function data(){
 
     var button8=document.createElement("button");
     button8.setAttribute("type","button");
-    button8.setAttribute("class","button");
+    button8.style.marginRight="5px";
+    button8.setAttribute("class","btn btn-primary");
     button8.innerHTML="8";
 
     button8.onclick=()=>{
@@ -86,7 +95,8 @@ async function data(){
 
     var button9=document.createElement("button");
     button9.setAttribute("type","button");
-    button9.setAttribute("class","button");
+    button9.style.marginRight="5px";
+    button9.setAttribute("class","btn btn-primary");
     button9.innerHTML="9";
 
     button9.onclick=()=>{
@@ -95,7 +105,8 @@ async function data(){
 
     var button10=document.createElement("button");
     button10.setAttribute("type","button");
-    button10.setAttribute("class","button");
+    button10.style.marginRight="5px";
+    button10.setAttribute("class","btn btn-primary");
     button10.innerHTML="10";
 
     button10.onclick=()=>{
@@ -104,7 +115,7 @@ async function data(){
     
     div.append(button1,button2,button3,button4,button5,button6,button7,button8,button9,button10)
     document.body.append(h1,table,div);
-    document.body.style.backgroundColor="cyan";
+    document.body.style.backgroundColor="whitesmoke";
 
     function buttons(x){
         var data=document.getElementById("table");
@@ -126,26 +137,7 @@ async function data(){
             </tr>`;
         }
     }
-
-    
-    // function create_button(){
-    //     for(var i=1;i<=10;i++){
-    //         var button=document.createElement("button");
-    //         button.setAttribute("type","button");
-    //         // button.setAttribute("id",`button${i}`);
-    //         button.innerHTML=i;
-
-    //         document.body.append(button);
-
-    //         button.onclick=()=>{
-    //             var b=10;
-    //             var k=document.getElementsByTagName("button");
-    //             console.log(k);
-    //             for(var x=(k-1)*10;x<(b*k);x++){
-    //                 console.log(x);
-    //             }
-    //         }
-    //     }
+    buttons(1);
 }
 
 data();
