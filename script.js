@@ -4,6 +4,7 @@ h1.innerHTML="PAGINATION";
 
 var table=document.createElement("table");
 table.setAttribute("id","table");
+table.style.marginLeft = "400px";
 
 async function data(){
     var res=await fetch("https://638adcb87220b45d2283a9d5.mockapi.io/dontchangeit");
@@ -12,7 +13,7 @@ async function data(){
     console.log(res1)
     var div=document.createElement("div");
     div.setAttribute("id","buttons");
-    div.style.marginLeft = "600px";
+    div.style.marginLeft = "500px";
 
     var button1=document.createElement("button");
     button1.setAttribute("type","button");
