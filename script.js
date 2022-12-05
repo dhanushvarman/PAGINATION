@@ -12,7 +12,7 @@ async function data(){
     console.log(res1)
     var div=document.createElement("div");
     div.setAttribute("id","buttons");
-    div.style.marginLeft = "100px";
+    div.style.marginLeft = "400px";
 
     var button1=document.createElement("button");
     button1.setAttribute("type","button");
