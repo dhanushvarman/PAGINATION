@@ -4,7 +4,7 @@ h1.innerHTML="PAGINATION";
 
 var table=document.createElement("table");
 table.setAttribute("id","table");
-table.style.marginLeft = "400px";
+table.style.marginLeft = "420px";
 
 async function data(){
     var res=await fetch("https://638adcb87220b45d2283a9d5.mockapi.io/dontchangeit");
